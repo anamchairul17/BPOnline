@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3E6E6"
+    tools:context=".ParentActivity">
+
+    <ImageView
+        android:id="@+id/ivBismillah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bismillah" />
+
+    <ImageView
+        android:id="@+id/ivSalam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivBismillah"
+        app:layout_constraintStart_toStartOf="@+id/ivBismillah"
+        app:layout_constraintTop_toBottomOf="@+id/ivBismillah"
+        app:srcCompat="@drawable/salam" />
+
+    <TextView
+        android:id="@+id/tvOrtu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Data Orang Tua"
+        android:textColor="#303030"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivSalam"
+        app:layout_constraintStart_toStartOf="@+id/ivSalam"
+        app:layout_constraintTop_toBottomOf="@+id/ivSalam" />
+
+    <TextView
+        android:id="@+id/tvSurat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="30dp"
+        android:text="Email"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrtu" />
+
+    <TextView
+        android:id="@+id/tvJeneng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="24dp"
+        android:text="Nama"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurat" />
+
+    <TextView
+        android:id="@+id/tvSandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="24dp"
+        android:text="Password"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvJeneng" />
+
+    <TextView
+        android:id="@+id/tvSandiUlang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="27dp"
+        android:text="Password Retype"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSandi" />
+
+    <TextView
+        android:id="@+id/tvHp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="24dp"
+        android:text="No Hp"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSandiUlang" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="24dp"
+        android:text="Gender"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHp" />
+
+    <TextView
+        android:id="@+id/tvReligi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="24dp"
+        android:text="Agama"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+    <TextView
+        android:id="@+id/tvNegaraDom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:text="Asal Negara Domisili"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReligi" />
+
+    <TextView
+        android:id="@+id/tvProvinsiDom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Asal Provinsi Domisili"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNegaraDom" />
+
+    <TextView
+        android:id="@+id/tvKotaDom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="24dp"
+        android:text="Asal Kota Domisili"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProvinsiDom" />
+
+    <TextView
+        android:id="@+id/tvKecDom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:text="Asal Kecamatan Domisili"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKotaDom" />
+
+    <TextView
+        android:id="@+id/tvKelDom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="Asal Kelurahan Domisili"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvKecDom" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/shape_rectangle_white_5dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSurat"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrtu" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/shape_rectangle_white_5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toEndOf="@+id/tvJeneng"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/TextPassword"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/shape_rectangle_white_5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toEndOf="@+id/tvSandi"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/TextPasswordUlang"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/shape_rectangle_white_5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/TextPassword"
+        app:layout_constraintStart_toEndOf="@+id/tvSandiUlang"
+        app:layout_constraintTop_toBottomOf="@+id/TextPassword" />
+
+    <EditText
+        android:id="@+id/inputTextPhoneOrtu"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/shape_rectangle_white_5dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@id/TextPasswordUlang"
+        app:layout_constraintStart_toEndOf="@+id/tvHp"
+        app:layout_constraintTop_toBottomOf="@id/TextPasswordUlang" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/spinner_down_one"
+        app:layout_constraintEnd_toEndOf="@+id/inputTextPhoneOrtu"
+        app:layout_constraintStart_toEndOf="@+id/tvGender"
+        app:layout_constraintTop_toBottomOf="@+id/inputTextPhoneOrtu" />
+
+    <Spinner
+        android:id="@+id/spinnerAgama"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/spinner_down_one"
+        app:layout_constraintEnd_toEndOf="@+id/inputTextPhoneOrtu"
+        app:layout_constraintStart_toEndOf="@+id/tvReligi"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGender"/>
+
+    <Spinner
+        android:id="@+id/spinnerNegaraDom"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/spinner_down_one"
+        app:layout_constraintEnd_toEndOf="@+id/inputTextPhoneOrtu"
+        app:layout_constraintStart_toEndOf="@+id/tvNegaraDom"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAgama" />
+
+    <Spinner
+        android:id="@+id/spinnerProvDom"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/spinner_down_one"
+        app:layout_constraintEnd_toEndOf="@+id/inputTextPhoneOrtu"
+        app:layout_constraintStart_toEndOf="@+id/tvProvinsiDom"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerNegaraDom" />
+
+    <Spinner
+        android:id="@+id/spinnerKotaDom"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/spinner_down_one"
+        app:layout_constraintEnd_toEndOf="@+id/inputTextPhoneOrtu"
+        app:layout_constraintStart_toEndOf="@+id/tvKotaDom"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProvDom" />
+
+    <Spinner
+        android:id="@+id/spinnerKecDom"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/spinner_down_one"
+        app:layout_constraintEnd_toEndOf="@+id/inputTextPhoneOrtu"
+        app:layout_constraintStart_toEndOf="@+id/tvKecDom"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerKotaDom" />
+
+    <Spinner
+        android:id="@+id/spinnerKelDom"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/spinner_down_one"
+        app:layout_constraintEnd_toEndOf="@+id/inputTextPhoneOrtu"
+        app:layout_constraintStart_toEndOf="@+id/tvKelDom"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerKecDom" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_rectangle_save_5dp"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerKelDom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

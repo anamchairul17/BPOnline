@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anam.bponline">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SuksesAkmSdActivity"></activity>
+        <activity android:name=".NextSchoolActivity" />
+        <activity android:name=".SeklanFavActivity" />
+        <activity android:name=".JagoBidstudActivity" />
+        <activity android:name=".AkmSmaActivity" />
+        <activity android:name=".SuksesTembusPtnActivity" />
+        <activity android:name=".DescriptionUiItbActivity" />
+        <activity android:name=".ParentActivity" />
+        <activity android:name=".SignUpPageActivity" />
+        <activity android:name=".LoginPageActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

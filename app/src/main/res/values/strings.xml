@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BP Online</string>
+    <string name="ptn">Sukses Tembus PTN</string>
+    <string name="uiitb">Sukses Tembus UI dan ITB</string>
+    <string name="akm11">Program Sukses AKM 11 SMA</string>
+    <string name="jago">Jago Bidang Studi</string>
+    <string name="seklan">Sukses Tembus Seklan Favorit</string>
+    <string name="akm8">Sukses AKM 4 SD dan 8 SMP</string>
+    <string name="menarik">Fasilitas Menarik</string>
+    <string name="testimoni">Apa Kata Pelanggan Tentang BP?</string>
+    <string name="description_ui_itb">Sukses Tembus UI dan ITB</string>
+    <string name="program_khusus">Program Khusus Tembus UI dan ITB Ini Mentargetkan Siswa Diterima Di UI Dan ITB Melalui Jalur SNMPTN (Undangan), SBMPTN, dan Seleksi Mandiri Yang Dapat Diikuti Oleh Kelas 12 SMA Maupun Alumni Tahun 2018 Dan 2019.</string>
+    <string name="program_sasaran">Sasaran-sasaran Program Khusus Tembus UI dan ITB TP. 2020/2021 Adalah:</string>
+    <string name="satu_ui_itb">1. Siswa Terbiasa Menjalankan Ibadah Harian Tepat Waktu, Memiliki Kepribadian Yang Mandiri, Dan Memiliki Motivasi Belajar Yang Tinggi.</string>
+    <string name="dua_ui_itb">2. Siswa Mampu Menguasai Materi Bidang Studi Terkait UTBK-SBMPTN Minimal 90%.</string>
+    <string name="tiga_ui_itb">3. Siswa Mengalami Peningkatan Pengetahuan Dan Keterampilan Menyelesaikan Soal-soal UTBK-SBMPTN Sebesar 60%.</string>
+    <string name="empat_ui_itb">4. Siswa Memiliki Wawasan Mengenai Program Studi Di UI dan ITB Yang Terbaik Dan Cocok Sesuai Dengan Kemampuan Akademik Serta Bakat Dan Minatnya.</string>
+    <string name="lima_ui_itb">5. Siswa Memiliki Pengetahuan Dan Keterampilan Mengerjakan Soal-soal Skolastik.</string>
+    <string name="enam_ui_itb">6. Siswa Belajar 4 Kali Sepekan Dengan Durasi @90 Menit.</string>
+    <string name="tujuh_ui_itb">7. Bidang Studi Yang Dipelajari Adalah Matematika, Fisika, Kimia, Biologi, Ekonomi, Geografi, Sosiologi, Sejarah, Bahasa Indonesia, Bahasa Inggris, Dan Skolastik.</string>
+    <string name="delapan_ui_itb">8. Paket Bidang Studi Yang Dipelajari Adalah:</string>
+</resources>

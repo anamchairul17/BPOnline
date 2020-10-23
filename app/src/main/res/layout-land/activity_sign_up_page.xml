@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AED8D2"
+    tools:context=".SignUpPageActivity">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_form_bio_ortu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Nama Lengkap"
+                android:textColor="#2B2B2B"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_no_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="No. Handphone"
+                android:textColor="#2B2B2B"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_nama_signup"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_nama_signup" />
+
+            <EditText
+                android:id="@+id/edit_text_nama_signup"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_rectangle_white_5dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_form_bio_ortu"
+                app:layout_constraintTop_toBottomOf="@+id/tv_form_bio_ortu" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_rectangle_white_5dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_nama_signup"
+                app:layout_constraintStart_toStartOf="@+id/tv_no_hp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_no_hp" />
+
+            <TextView
+                android:id="@+id/tv_jk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Jenis Kelamin"
+                android:textColor="#2B2B2B"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+            <Spinner
+                android:id="@+id/spinner_jk"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_down_one"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+                app:layout_constraintStart_toStartOf="@+id/tv_jk"
+                app:layout_constraintTop_toBottomOf="@+id/tv_jk" />
+
+            <TextView
+                android:id="@+id/tvAgama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Agama"
+                android:textColor="#2B2B2B"
+                app:layout_constraintStart_toStartOf="@+id/spinner_jk"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_jk" />
+
+            <Spinner
+                android:id="@+id/spinner_agama"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_down_one"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_jk"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvAgama"
+                app:layout_constraintTop_toBottomOf="@+id/tvAgama" />
+
+            <TextView
+                android:id="@+id/tvNegara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Asal Negara Domisili"
+                android:textColor="#2B2B2B"
+                app:layout_constraintStart_toStartOf="@+id/spinner_agama"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_agama" />
+
+            <Spinner
+                android:id="@+id/spinner_negara"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_down_one"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_jk"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvNegara"
+                app:layout_constraintTop_toBottomOf="@+id/tvNegara" />
+
+            <TextView
+                android:id="@+id/tvProvinsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Provinsi  Domisili"
+                android:textColor="#2B2B2B"
+                app:layout_constraintStart_toStartOf="@+id/spinner_negara"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_negara" />
+
+            <Spinner
+                android:id="@+id/spinner_provinsi"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_down_one"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_jk"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvProvinsi"
+                app:layout_constraintTop_toBottomOf="@+id/tvProvinsi" />
+
+            <TextView
+                android:id="@+id/tvKota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Kota  Domisili"
+                android:textColor="#2B2B2B"
+                app:layout_constraintStart_toStartOf="@+id/spinner_provinsi"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_provinsi" />
+
+            <Spinner
+                android:id="@+id/spinner_kota"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_down_one"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_jk"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvKota"
+                app:layout_constraintTop_toBottomOf="@+id/tvKota" />
+
+            <TextView
+                android:id="@+id/tvKecamatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Kecamatan  Domisili"
+                android:textColor="#2B2B2B"
+                app:layout_constraintStart_toStartOf="@+id/spinner_kota"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_kota" />
+
+            <Spinner
+                android:id="@+id/spinner_kecamatan"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_down_one"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_jk"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvKecamatan"
+                app:layout_constraintTop_toBottomOf="@+id/tvKecamatan" />
+
+            <TextView
+                android:id="@+id/tvKelurhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Kelurahan  Domisili"
+                android:textColor="#2B2B2B"
+                app:layout_constraintStart_toStartOf="@+id/spinner_kecamatan"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_kecamatan" />
+
+            <Spinner
+                android:id="@+id/spinner_kelurahan"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_down_one"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_jk"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvKelurhan"
+                app:layout_constraintTop_toBottomOf="@+id/tvKelurhan" />
+
+            <TextView
+                android:id="@+id/tvMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Email Username"
+                android:textColor="#2B2B2B"
+                app:layout_constraintStart_toStartOf="@+id/spinner_kelurahan"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_kelurahan" />
+
+            <EditText
+                android:id="@+id/editTextMail"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_rectangle_white_5dp"
+                android:ems="10"
+                android:hint="*untuk login user"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_nama_signup"
+                app:layout_constraintStart_toStartOf="@+id/tvMail"
+                app:layout_constraintTop_toBottomOf="@+id/tvMail" />
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Email Username"
+                android:textColor="#2B2B2B"
+                app:layout_constraintStart_toStartOf="@+id/editTextMail"
+                app:layout_constraintTop_toBottomOf="@+id/editTextMail" />
+
+            <EditText
+                android:id="@+id/editTextPass"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_rectangle_white_5dp"
+                android:ems="10"
+                android:hint="*untuk login user"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_nama_signup"
+                app:layout_constraintStart_toStartOf="@id/tvPassword"
+                app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAgree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Saya setuju dan ingin melanjutkan"
+                app:layout_constraintStart_toStartOf="@+id/editTextPass"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPass" />
+
+            <TextView
+                android:id="@+id/tvBacaSyarat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Dengan daftar anda menyetujui persytatan ketentuan kami, baca selengkapnya disini."
+                android:textColor="#2B2B2B"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxAgree"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxAgree" />
+
+            <Button
+                android:id="@+id/button_daftar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/back_btn_daftar"
+                android:text="Daftar Sekarang!"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvBacaSyarat"
+                app:layout_constraintStart_toStartOf="@+id/tvBacaSyarat"
+                app:layout_constraintTop_toBottomOf="@+id/tvBacaSyarat" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
